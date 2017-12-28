@@ -42,5 +42,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng taruc = new LatLng(3.216268, 101.725961);
         mMap.addMarker(new MarkerOptions().position(taruc).title("Marker in Tar UC"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(taruc));
+       mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(taruc, 15));
     }
 }
